@@ -30,6 +30,12 @@ jobs:
       
       - run: mvn package
 
+      - run: 
+          name: Generate code coverage report
+          command: |
+            mvn cobertura:cobertura
+            bash <(curl -s https://codecov.io/bash)
+
       - run:
           name: Save test results
           command: |
