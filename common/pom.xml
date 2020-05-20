@@ -16,31 +16,9 @@
   <version>0.3.3-SNAPSHOT</version>
 
   <packaging>pom</packaging>
-
-  <properties>
-    <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
-  </properties>
-
   <modules>
     <module>protocols</module>
     <module>persistence</module>
   </modules>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <version>${cobertura-maven-plugin.version}</version>
-        <configuration>
-            <formats>
-                <format>html</format>
-                <format>xml</format>
-            </formats>
-            <check />
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 
 </project>
